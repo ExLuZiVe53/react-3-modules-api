@@ -1,16 +1,26 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import React, { Component } from 'react';
+
+export class App extends Component {
+  state = {
+    posts: null,
+    isLoading: false,
+    error: null,
+  };
+
+  fetchAllPosts() {}
+
+  render() {
+    return (
+      <>
+        <ul>
+          <li>
+            <span></span>
+            <h3></h3>
+            <h4></h4>
+            <p></p>
+          </li>
+        </ul>
+      </>
+    );
+  }
+}
